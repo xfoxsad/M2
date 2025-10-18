@@ -14,7 +14,7 @@ public interface BreedFetcher {
      * @throws BreedNotFoundException if the breed does not exist
      */
     List<String> getSubBreeds(String breed)
-            //
+            throws BreedNotFoundException;
 
     class BreedNotFoundException extends Exception {
         public BreedNotFoundException(String breed) {
